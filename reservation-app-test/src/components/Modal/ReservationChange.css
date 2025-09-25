@@ -1,0 +1,48 @@
+form div {
+  margin-bottom: calc((10 / 1280) * 100vw);
+}
+
+form input {
+  width: calc((200 / 1280) * 100vw);
+}
+form select {
+  width: calc((200 / 1280) * 100vw);
+}
+
+form textarea {
+  width: calc((200 / 1280) * 100vw);
+}
+
+/* ボタン */
+
+.change-Save {
+  background-color: rgb(121, 106, 24);
+  width: calc((90 / 1280) * 100vw);
+  color: white;
+  border: none;
+  padding: calc((5 / 1280) * 100vw) calc((10 / 1280) * 100vw);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: calc((13 / 1280) * 100vw);
+  margin: calc((20 / 1280) * 100vw) calc((2 / 1280) * 100vw) 0 calc((20 / 1280) * 100vw);
+  cursor: pointer;
+  border-radius: calc((4 / 1280) * 100vw);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.change-Cancel {
+  background-color: #cccccc;
+  width: calc((90 / 1280) * 100vw);
+  color: white;
+  border: none;
+  padding: calc((5 / 1280) * 100vw) calc((10 / 1280) * 100vw);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: calc((13 / 1280) * 100vw);
+  margin: calc((20 / 1280) * 100vw) calc((2 / 1280) * 100vw) 0;
+  cursor: pointer;
+  border-radius: calc((4 / 1280) * 100vw);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}

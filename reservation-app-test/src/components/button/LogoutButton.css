@@ -1,0 +1,24 @@
+
+/* ログアウトボタンのスタイル */
+.logout-btn {
+  background-color: #cccccc;
+  width: calc((100 / 1280) * 100vw);
+  color: white;
+  border: none;
+  padding: calc((8 / 1280) * 100vw) calc((10 / 1280) * 100vw);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: calc((13 / 1280) * 100vw);
+  margin: calc((10 / 1280) * 100vw) calc((2 / 1280) * 100vw) 0;
+  cursor: pointer;
+  border-radius: calc((4 / 1280) * 100vw);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #a3a3a3;
+  transform: scale(0.8);
+}
+
+ /* #4c6aaf; */

@@ -1,0 +1,8 @@
+.Reswap {
+    padding-top: calc((70 / 1280) * 100vw);
+}
+
+
+.Calendar-box {
+    padding: calc((20 / 1280) * 100vw) calc((100 / 1280) * 100vw) calc((100 / 1280) * 100vw);
+}

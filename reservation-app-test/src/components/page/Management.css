@@ -1,0 +1,79 @@
+
+/* Management.css */
+
+.management-container {
+  padding: 60px 20px 20px;
+
+}
+
+.title-Mana {
+
+  font-size: 24px;
+  color: #333;
+}
+
+nav {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.management-nav {
+flex-direction: row-reverse;
+
+}
+    
+.management-nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #efb31a;
+  border-radius: 50px; /* Rounded button */
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.management-nav-button:hover {
+  background-color: #b3a100; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+
+.search-container{
+    text-align: right;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.user-card p {
+  margin: 5px 0;
+}
+
+.user-card p:first-child {
+  font-weight: bold;
+}
+
+
+
+
+/* 中央揃えのスタイル */
+.centered-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px); /* 画面の高さから余白を引いた高さ */
+  text-align: center;
+}

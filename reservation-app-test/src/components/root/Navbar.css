@@ -1,0 +1,49 @@
+.navnav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(66, 58, 28);
+  gap: 40px;
+  padding: 0 50px;
+  position: fixed;
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+}
+
+.navnav a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.navnav a:hover {
+  color: rgb(247, 231, 9);
+}
+
+.navnav a svg {
+  margin-right: 5px;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99999;
+}
+
+@media screen and (max-width: 599px) {
+  nav {
+    gap: 20px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3;
+    font-weight: 600;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,22 @@
+
+/* ログインボタンのスタイル */
+.login-btn {
+  background-color: #4caf50;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: calc((10 / 1280) * 100vw) calc((20 / 1280) * 100vw);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: calc((16 / 1280) * 100vw);
+  margin: calc((20 / 1280) * 100vw) calc((2 / 1280) * 100vw) 0;
+  cursor: pointer;
+  border-radius: calc((4 / 1280) * 100vw);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #4caf50;
+  transform: scale(0.8);
+}

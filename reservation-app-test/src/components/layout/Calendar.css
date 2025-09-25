@@ -1,0 +1,39 @@
+label span {
+  font-size: calc((10 / 1280) * 100vw);
+  color: rgb(233, 144, 144);
+}
+
+.fc-day-sat {
+  background-color: #e5f1f3;
+}
+.fc-day-sun {
+  background-color: #ffefe5;
+}
+
+.fc-day-mon {
+  background-color: #fdfcee;
+}
+.fc-day-tue {
+  background-color: #fdfcee;
+}
+.fc-day-wed {
+  background-color: #fdfcee;
+}
+.fc-day-thu {
+  background-color: #fdfcee;
+}
+.fc-day-fri {
+  background-color: #fdfcee;
+}
+
+
+
+/* 予約済み表示 */
+
+.fc-event-booked div{
+  background-color:#3788d8;
+  color: #fff;
+  border-radius: 4px; 
+  color:#e5f1f3
+}
+

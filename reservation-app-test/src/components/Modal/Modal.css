@@ -1,0 +1,107 @@
+/* Modal.css */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* グレー背景 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: calc((20 / 1280) * 100vw) calc((30 / 1280) * 100vw) calc((40 / 1280) * 100vw);
+  margin-top: calc((40 / 1280) * 100vw);
+  border-radius: calc((8 / 1280) * 100vw);
+  width: 90%;
+  max-width: calc((500 / 1280) * 100vw);
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: calc((10 / 1280) * 100vw);
+  right: calc((10 / 1280) * 100vw);
+  cursor: pointer;
+  font-size: calc((24 / 1280) * 100vw);
+  color: #333;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc((20 / 1280) * 100vw);
+}
+
+.modal form div {
+  margin-bottom: calc((5 / 1280) * 100vw);
+}
+
+.modal form label {
+  display: block;
+  /* margin-bottom: calc((5 / 1280) * 100vw); */
+  font-weight: bold;
+}
+
+.modal form input,
+.modal form select,
+.modal form textarea {
+  width: 100%;
+  padding: calc((5 / 1280) * 100vw);
+  border: 1px solid #ccc;
+  border-radius: calc((4 / 1280) * 100vw);
+}
+
+.modal form button {
+  padding: calc((8 / 1280) * 100vw);
+  border: none;
+  border-radius: calc((4 / 1280) * 100vw);
+  color: white;
+  font-size: calc((13 / 1280) * 100vw);
+  cursor: pointer;
+  margin-bottom: calc((10 / 1280) * 100vw);
+}
+
+.modal form button:first-of-type {
+  background-color: #28a745;
+}
+
+.modal form button:last-of-type {
+  background-color: #cccccc;
+}
+
+.gray {
+  color: #b6b6b6;
+}
+
+textarea {
+  resize: none;
+}
+
+.modal-content textarea {
+  font-family: "FOT-TsukuARdGothic Std", sans-serif;
+  color: rgb(121, 106, 24);
+  border-radius: 4px; 
+  max-height: calc((50 / 1280) * 100vw);
+}
+
+.modal-content textarea:focus {
+  border-color: rgb(121, 106, 24); 
+  outline: none; 
+}
+
+.modal-content select {
+  font-family: "FOT-TsukuARdGothic Std", sans-serif;
+  color: rgb(144, 144, 144);
+  border-radius: 4px; 
+}
+

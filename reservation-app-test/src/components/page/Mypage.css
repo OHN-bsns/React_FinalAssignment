@@ -1,0 +1,79 @@
+.Mypage-wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: calc((55 / 1280) * 100vw) calc((100 / 1280) * 100vw) calc((40 / 1280) * 100vw);
+}
+
+.message-box {
+  background-color: #fff;
+  border-radius: calc((3 / 1280) * 100vw);
+  width: calc((900 / 1280) * 100vw);
+  padding: calc((10 / 1280) * 100vw) calc((100 / 1280) * 100vw)
+    calc((40 / 1280) * 100vw);
+}
+
+.lo-btnbox {
+  width: calc((900 / 1280) * 100vw);
+  display: flex;
+  justify-content: end;
+}
+
+/* お知らせボックス内スタイル */
+.notification-box {
+  padding: calc((30 / 1280) * 100vw) calc((40 / 1280) * 100vw)
+    calc((40 / 1280) * 100vw);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.notification-box p {
+  margin: 0.5rem 0;
+}
+
+.notification-box strong {
+  width: calc((130 / 1280) * 100vw);
+  font-weight: bold;
+}
+
+.in-menu {
+  padding-left: calc((15 / 1280) * 100vw);
+}
+
+.line-box {
+  width: 100%;
+  border-top: 2px dotted rgb(121, 106, 24);
+  border-bottom: 2px dotted rgb(121, 106, 24);
+  text-align: start;
+}
+
+.change-btn {
+  background-color: rgb(188, 188, 158);
+  color: white;
+  border: none;
+  padding: calc((5 / 1280) * 100vw) calc((15 / 1280) * 100vw);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: calc((11 / 1280) * 100vw);
+  margin: calc((10 / 1280) * 100vw) calc((2 / 1280) * 100vw) 0;
+  cursor: pointer;
+  border-radius: calc((4 / 1280) * 100vw);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.attention {
+    font-size: calc((11 / 1280) * 100vw);
+}
+
+.change-btn:hover {
+  background-color:rgb(121, 106, 24);
+}
