@@ -54,7 +54,7 @@ const Mypage = () => {
           );
 
           setReservations(fetchedReservations);
-          setNotification(latestReservation || null); // nullを設定
+          setNotification(latestReservation || null);
         } catch (error) {
           setError("ユーザー情報の取得に失敗しました。");
           console.error("Error fetching user data:", error.message);
@@ -68,8 +68,6 @@ const Mypage = () => {
     fetchUser();
   }, []);
 
-  // const updateNotification = () => {
-  // };
 
   useEffect(() => {
     const fetchBookedTimesForDate = async (date) => {

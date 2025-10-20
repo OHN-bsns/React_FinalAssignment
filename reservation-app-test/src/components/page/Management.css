@@ -68,12 +68,10 @@ flex-direction: row-reverse;
 
 
 
-
-/* 中央揃えのスタイル */
 .centered-message {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 40px); /* 画面の高さから余白を引いた高さ */
+  height: calc(100vh - 40px); 
   text-align: center;
 }

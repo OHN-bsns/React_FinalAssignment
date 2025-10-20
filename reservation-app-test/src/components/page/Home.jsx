@@ -35,9 +35,6 @@ const Home = ({ setIsAuth }) => {
      localStorage.setItem("isAuth", "true");
      setIsAuth(true);
 
-     // ログインユーザーの役割を設定
-     // await setCurrentUserRole("admin"); // 管理者として設定
-
      // 予約ページへ遷移
      navigate("/reservation");
    } catch (error) {

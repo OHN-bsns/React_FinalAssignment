@@ -1,5 +1,11 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  Outlet,
+} from "react-router-dom";
 import Home from "./components/page/Home";
 import Reservation from "./components/page/Reservation";
 import Management from "./components/page/Management";
@@ -29,25 +35,31 @@ function App() {
     return () => unsubscribe(); // クリーンアップ
   }, []);
 
+  const PrivateRoute = () => {
+    return isAuth ? <Outlet /> : <Navigate to="/" replace />;
+  };
   return (
     <div className="App">
       <Router>
         <Navbar isAuth={isAuth} />
         <Routes>
           <Route path="/" element={<Home setIsAuth={setIsAuth} />}></Route>
-          <Route
-            path="/reservation"
-            element={<Reservation isAuth={isAuth} />}
-          ></Route>
-          <Route path="/mypage" element={<Mypage isAuth={isAuth} />}></Route>
-          <Route path="/management/*" element={<Management isAuth={isAuth} />}>
-            <Route index element={<Client isAuth={isAuth} />} />
-            <Route path="report" element={<Report isAuth={isAuth} />} />
+
+          <Route element={<PrivateRoute />}>
+            <Route
+              path="/reservation"
+              element={<Reservation isAuth={isAuth} />}
+            />
+            <Route path="/mypage" element={<Mypage isAuth={isAuth} />} />
+            <Route path="/logout" element={<Logout setIsAuth={setIsAuth} />} />
+            <Route
+              path="/management/*"
+              element={<Management isAuth={isAuth} />}
+            >
+              <Route index element={<Client isAuth={isAuth} />} />
+              <Route path="report" element={<Report isAuth={isAuth} />} />
+            </Route>
           </Route>
-          <Route
-            path="/logout"
-            element={<Logout setIsAuth={setIsAuth} />}
-          ></Route>
         </Routes>
       </Router>
     </div>

@@ -3,8 +3,7 @@ import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 import Report from "./Report";
-import ReservationList from "./ReservationList"; // 追加したコンポーネントのインポート
-import "./Management.css"; // Import the CSS file
+import ReservationList from "./ReservationList"; 
 
 const Management = () => {
   const [users, setUsers] = useState([]);
