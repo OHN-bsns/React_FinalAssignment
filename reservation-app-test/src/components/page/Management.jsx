@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { Routes, Route, Link, Navigate } from "react-router-dom";
+import "./Management.css";
 import Report from "./Report";
 import ReservationList from "./ReservationList"; 
 
